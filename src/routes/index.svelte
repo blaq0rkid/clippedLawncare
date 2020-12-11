@@ -315,23 +315,7 @@ footer p{
 </svelte:head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="home.html">My Garden</a>
-            </div>
-            <nav>
-                <ul>
-                    <li class=active><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                   
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-    </header>
+    
     <section id="intro">
         <div class="container">
             <div class="text-intro">

@@ -3,56 +3,66 @@
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+	/*Basic CSS Resets*/
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
 	}
-
-	ul {
-		margin: 0;
-		padding: 0;
+	
+	/*header*/
+	header{
+		background-color: #FBF9FF;
+		box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
+	header .logo{
+		font-size: 1.5em;
+		font-family: 'Raleway', sans-serif;
 	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
+	
+	header li{
 		display: inline-block;
 	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
+	header a{
+		display: inline-block;
+		color: #0D1413;
 		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
+		padding: 10px;
+		transition: background-color 0.4s;
 	}
-</style>
+	header nav a:hover,
+	header .active a{
+		background-color: rgba(0,0,0,.05);
+	}
+	/****header*/
+	
+	/*media queries for tablets*/
+	@media screen and (min-width: 750px){
+		header .logo{
+			display: inline-block;
+			width: 30%;
+		}
+		header nav{
+			display: inline-block;
+			width: 60%;
+		}
+		
+	}
+	</style>
 
-<nav>
-	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-		<li><a aria-current="{segment === 'services' ? 'page' : undefined}" href="services">Services</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
-		<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contact</a></li>
-	</ul>
-</nav>
+
+
+
+<header>
+	<div class="container">		
+		<nav>
+			<ul>
+				<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
+				<li><a aria-current="{segment === 'services' ? 'page' : undefined}" href="services">Services</a></li>			   
+				<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
+				<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</header>

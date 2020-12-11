@@ -186,23 +186,11 @@ footer p{
 }
 </style>
 
-<header>
-    <div class="container">
-        <div class="logo">
-            <a href="home.html">My Garden</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                
-                <li><a href="services.html">Services</a></li>
-                <li class=active><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-</header>
+<svelte:head>
+	<title>Clipper's Lawncare</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+</svelte:head>
+
 <section id="showcase">
     <div class="container">
         <h1>Contact Us</h1>
