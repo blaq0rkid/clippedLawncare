@@ -12,14 +12,15 @@
 	
 	/*header*/
 	header{
+		text-align: center;
+		position: fixed;	
+		top: 8%;	
+		width: 100%;
+		z-index: 100;
 		background-color: #FBF9FF;
 		box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 	}
-	header .logo{
-		font-size: 1.5em;
-		font-family: 'Raleway', sans-serif;
-	}
-	
+		
 	header li{
 		display: inline-block;
 	}
@@ -38,20 +39,16 @@
 	
 	/*media queries for tablets*/
 	@media screen and (min-width: 750px){
-		header .logo{
+		/* header .logo{
 			display: inline-block;
 			width: 30%;
-		}
+		} */
 		header nav{
 			display: inline-block;
 			width: 60%;
-		}
-		
+		}		
 	}
 	</style>
-
-
-
 
 <header>
 	<div class="container">		

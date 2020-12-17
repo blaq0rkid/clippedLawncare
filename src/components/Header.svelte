@@ -5,6 +5,12 @@
 <style>
     /*header*/
 header{
+    text-align: center;
+    position: fixed;
+    height: 8%;
+    z-index: 100;
+    top: 0;
+    width: 100%;
     background-color: #FBF9FF;
     box-shadow: 0px 0px 20px rgba(0,0,0,.2);
 }
