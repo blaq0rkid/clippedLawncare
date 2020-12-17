@@ -45,23 +45,7 @@ body{
 #few-words-about-us p{
     padding: 10px;
 }
-.call-to-action{
-    text-align: center;
-}
-.call-to-action a{
-    display: inline-block;
-    margin: 10px 0px 20px;
-    padding: 15px;
-    text-decoration: none;
-    background-color: #55C18F;
-    color: #fff;
-    transition: box-shadow 0.5s;
-}
-
-.call-to-action a:hover{
-    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-}
-/*** few wors about us*/
+/*** few words about us*/
 
 /*company history*/
 #our-history{
