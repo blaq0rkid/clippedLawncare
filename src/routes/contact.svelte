@@ -17,7 +17,7 @@
 /*showcase*/
 #showcase{
     height: 300px;
-    background-image: url(../img/garden.jpg);
+    background-image: url(https://images.unsplash.com/photo-1561468528-e7b3a39e0e66?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8Z2FyZGVuJTIwZmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60);
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -96,8 +96,9 @@
 <section id="showcase">
     <div class="container">
         <h1>Contact Us</h1>      
- </div>    
+    </div>    
 </section>
+
 <section id="contact">
     <div class="container">
         <h2>Get in Touch</h2>
@@ -110,11 +111,18 @@
 
             <button type="submit">Send Message</button>
         </form>
-    </div>
-    
+    </div>    
 </section> 
 <Newsletter />
+
 <section id="map">
     <!-- svelte-ignore a11y-missing-attribute -->
-    <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=paris&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.mapouter{overflow:hidden;height:500px;width:100%;}.gmap_canvas {background:none!important;height:500px;width:100%;}</style></div>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=paris&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+        </div>
+        <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+        <style>.mapouter{overflow:hidden;height:500px;width:100%;}.gmap_canvas {background:none!important;height:500px;width:100%;}</style>
+    </div>
 </section>
